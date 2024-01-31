@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Confirmation Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<img src="logo.png" alt="Photography Studio Logo">
+<h1>Photography Studio</h1>
+</header>
+
+<main>
+<h2>Your Photoshoot Information</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Phone Number</th>
+<th>Time Slot</th>
+<th>Date</th>
+<th>Payment Status</th>
+</tr>
+</thead>
+<tbody>
+{% for registration in registrations %}
+<tr>
+<td>{{ registration[0] }}</td>
+<td>{{ registration[1] }}</td>
+<td>{{ registration[2] }}</td>
+<td>{{ registration[3] }}</td>
+<td>{{ registration[4] }}</td>
+<td>{{ registration[5] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+<a href="/download">Download Spreadsheet</a>
+
+<a href="/">Return to Home Page</a>
+</main>
+
+<footer>
+<div class="social-media-links">
+<a href="#"><img src="facebook.png" alt="Facebook"></a>
+<a href="#"><img src="twitter.png" alt="Twitter"></a>
+<a href="#"><img src="instagram.png" alt="Instagram"></a>
+</div>
+
+<div class="contact-information">
+<p>Contact Us:</p>
+<p>Address: 123 Main Street, Anytown, CA 12345</p>
+<p>Phone: (123) 456-7890</p>
+<p>Email: info@photographystudio.com</p>
+</div>
+</footer>
+</body>
+</html>
+
