@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photography Studio Landing Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<img src="logo.png" alt="Photography Studio Logo">
+<h1>Photography Studio</h1>
+</header>
+
+<main>
+<section class="hero-image">
+<img src="hero-image.jpg" alt="Hero Image">
+<div class="hero-text">
+<h2>Welcome to Photography Studio!</h2>
+<p>We specialize in capturing your special moments and turning them into lasting memories.</p>
+</div>
+</section>
+
+<section class="registration-form">
+<h2>Book Your Photoshoot</h2>
+<form action="/register" method="POST">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name">
+
+<label for="email">Email:</label>
+<input type="email" name="email" id="email">
+
+<label for="phone">Phone Number:</label>
+<input type="tel" name="phone" id="phone">
+
+<label for="time_slot">Time Slot:</label>
+<select name="time_slot" id="time_slot">
+<option value="9am - 10am">9am - 10am</option>
+<option value="10am - 11am">10am - 11am</option>
+<option value="11am - 12pm">11am - 12pm</option>
+<option value="1pm - 2pm">1pm - 2pm</option>
+<option value="2pm - 3pm">2pm - 3pm</option>
+<option value="3pm - 4pm">3pm - 4pm</option>
+<option value="4pm - 5pm">4pm - 5pm</option>
+</select>
+
+<label for="date">Date:</label>
+<input type="date" name="date" id="date">
+
+<button type="submit">Book Now</button>
+</form>
+</section>
+</main>
+
+<footer>
+<div class="social-media-links">
+<a href="#"><img src="facebook.png" alt="Facebook"></a>
+<a href="#"><img src="twitter.png" alt="Twitter"></a>
+<a href="#"><img src="instagram.png" alt="Instagram"></a>
+</div>
+
+<div class="contact-information">
+<p>Contact Us:</p>
+<p>Address: 123 Main Street, Anytown, CA 12345</p>
+<p>Phone: (123) 456-7890</p>
+<p>Email: info@photographystudio.com</p>
+</div>
+</footer>
+</body>
+</html>
+
+
